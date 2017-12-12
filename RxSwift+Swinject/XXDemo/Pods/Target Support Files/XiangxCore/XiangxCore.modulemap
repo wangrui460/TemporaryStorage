@@ -1,0 +1,6 @@
+framework module XiangxCore {
+  umbrella header "XiangxCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

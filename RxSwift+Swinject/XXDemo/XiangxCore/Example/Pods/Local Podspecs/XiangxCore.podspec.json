@@ -1,0 +1,22 @@
+{
+  "name": "XiangxCore",
+  "version": "0.1.0",
+  "summary": "A short description of XiangxCore.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/magicbird129@gmail.com/XiangxCore",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "magicbird129@gmail.com": "yfchen@xiangx.net"
+  },
+  "source": {
+    "git": "https://github.com/magicbird129@gmail.com/XiangxCore.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XiangxCore/Classes/**/*"
+}
