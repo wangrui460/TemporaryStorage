@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 func appAssembler() -> Assembler {
     let assembler = Assembler([
         UiAssembly(),
-        XiangxCore.UiAssembly()
+//        XiangxCore.UiAssembly()
         ])
     return assembler
 }

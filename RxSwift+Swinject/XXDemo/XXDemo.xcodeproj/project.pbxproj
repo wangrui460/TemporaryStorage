@@ -128,9 +128,9 @@
 		342FE86C1FD6495C005687F4 /* XXDemo */ = {
 			isa = PBXGroup;
 			children = (
+				342FE86D1FD6495C005687F4 /* AppDelegate.swift */,
 				34BE71281FDF848D00502FE6 /* Assembly */,
 				34BE71221FDF7D6700502FE6 /* UI */,
-				342FE86D1FD6495C005687F4 /* AppDelegate.swift */,
 				342FE8741FD6495C005687F4 /* Assets.xcassets */,
 				342FE8761FD6495C005687F4 /* LaunchScreen.storyboard */,
 				342FE8791FD6495C005687F4 /* Info.plist */,

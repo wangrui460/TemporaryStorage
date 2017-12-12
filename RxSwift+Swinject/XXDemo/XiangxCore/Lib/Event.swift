@@ -28,7 +28,7 @@ public protocol UiEventType: EventType {
     var action:ActionType { get }
 }
 
-// TODO: 不知道这样写有什么用
+
 extension RawRepresentable where RawValue == String {
     public var name: String {
         return self.rawValue
