@@ -15,7 +15,7 @@ public struct UiEvent:UiEventType {
     public let section: SectionType?
     public let component: ComponentType?
     public let action: ActionType
-    init(page:PageType?, section:SectionType?, component:ComponentType?, action:ActionType) {
+    public init(page:PageType?, section:SectionType?, component:ComponentType?, action:ActionType) {
         self.page = page
         self.section = section
         self.component = component

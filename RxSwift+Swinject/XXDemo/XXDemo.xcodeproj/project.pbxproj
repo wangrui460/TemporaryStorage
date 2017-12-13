@@ -16,6 +16,13 @@
 		34BE71251FDF7EB500502FE6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE71241FDF7EB500502FE6 /* RootView.swift */; };
 		34BE71271FDF821100502FE6 /* RootViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE71261FDF821100502FE6 /* RootViewController+Rx.swift */; };
 		34BE712A1FDF84A900502FE6 /* UiAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE71291FDF84A900502FE6 /* UiAssembly.swift */; };
+		34BE71351FDFCFC900502FE6 /* RouteAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE71341FDFCFC900502FE6 /* RouteAssembly.swift */; };
+		34BE71381FDFD07900502FE6 /* RouteSideEffectExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE71371FDFD07900502FE6 /* RouteSideEffectExecutor.swift */; };
+		34BE713A1FE00D4400502FE6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE71391FE00D4400502FE6 /* Router.swift */; };
+		34BE713D1FE00E8900502FE6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE713C1FE00E8900502FE6 /* LoginViewController.swift */; };
+		34BE71401FE0155D00502FE6 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE713F1FE0155D00502FE6 /* UIViewController+Rx.swift */; };
+		34BE71431FE0190D00502FE6 /* EventUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE71421FE0190D00502FE6 /* EventUtil.swift */; };
+		34D71B3B1FE1072F00E6A0B0 /* LoginViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D71B3A1FE1072F00E6A0B0 /* LoginViewController+Rx.swift */; };
 		61890525336A6AD62AA422E9 /* Pods_XXDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5956865F68F74B651A12351B /* Pods_XXDemo.framework */; };
 		943A81E4F23A75EC7AE632D4 /* Pods_XXDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC6C960AD96EBADC8193B79 /* Pods_XXDemoTests.framework */; };
 		F30E371EE1E4E8C75FEF789F /* Pods_XXDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18549ED62A56900BBED9447F /* Pods_XXDemoUITests.framework */; };
@@ -56,6 +63,13 @@
 		34BE71241FDF7EB500502FE6 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		34BE71261FDF821100502FE6 /* RootViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootViewController+Rx.swift"; sourceTree = "<group>"; };
 		34BE71291FDF84A900502FE6 /* UiAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiAssembly.swift; sourceTree = "<group>"; };
+		34BE71341FDFCFC900502FE6 /* RouteAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteAssembly.swift; sourceTree = "<group>"; };
+		34BE71371FDFD07900502FE6 /* RouteSideEffectExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteSideEffectExecutor.swift; sourceTree = "<group>"; };
+		34BE71391FE00D4400502FE6 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		34BE713C1FE00E8900502FE6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		34BE713F1FE0155D00502FE6 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		34BE71421FE0190D00502FE6 /* EventUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventUtil.swift; sourceTree = "<group>"; };
+		34D71B3A1FE1072F00E6A0B0 /* LoginViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Rx.swift"; sourceTree = "<group>"; };
 		35F074ABDB4F5A3C3A9D3C25 /* Pods-XXDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXDemoUITests/Pods-XXDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4A79EE169A4CB16E2E1158CE /* Pods-XXDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXDemoUITests/Pods-XXDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5956865F68F74B651A12351B /* Pods_XXDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XXDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +145,7 @@
 				342FE86D1FD6495C005687F4 /* AppDelegate.swift */,
 				34BE71281FDF848D00502FE6 /* Assembly */,
 				34BE71221FDF7D6700502FE6 /* UI */,
+				34BE713E1FE0153E00502FE6 /* Lib */,
 				342FE8741FD6495C005687F4 /* Assets.xcassets */,
 				342FE8761FD6495C005687F4 /* LaunchScreen.storyboard */,
 				342FE8791FD6495C005687F4 /* Info.plist */,
@@ -159,7 +174,10 @@
 		34BE71221FDF7D6700502FE6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				34BE713B1FE00E6D00502FE6 /* User */,
+				34BE71361FDFD03200502FE6 /* router */,
 				34BE71231FDF7D7000502FE6 /* Root */,
+				34BE71411FE018D200502FE6 /* Util */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -178,8 +196,43 @@
 			isa = PBXGroup;
 			children = (
 				34BE71291FDF84A900502FE6 /* UiAssembly.swift */,
+				34BE71341FDFCFC900502FE6 /* RouteAssembly.swift */,
 			);
 			path = Assembly;
+			sourceTree = "<group>";
+		};
+		34BE71361FDFD03200502FE6 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				34BE71371FDFD07900502FE6 /* RouteSideEffectExecutor.swift */,
+				34BE71391FE00D4400502FE6 /* Router.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		34BE713B1FE00E6D00502FE6 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				34BE713C1FE00E8900502FE6 /* LoginViewController.swift */,
+				34D71B3A1FE1072F00E6A0B0 /* LoginViewController+Rx.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		34BE713E1FE0153E00502FE6 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				34BE713F1FE0155D00502FE6 /* UIViewController+Rx.swift */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		34BE71411FE018D200502FE6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				34BE71421FE0190D00502FE6 /* EventUtil.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		8002CA341DBCA7028213A46B /* Pods */ = {
@@ -507,11 +560,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34BE71401FE0155D00502FE6 /* UIViewController+Rx.swift in Sources */,
+				34BE713D1FE00E8900502FE6 /* LoginViewController.swift in Sources */,
+				34BE713A1FE00D4400502FE6 /* Router.swift in Sources */,
 				34BE71211FDF7D6100502FE6 /* RootViewController.swift in Sources */,
+				34D71B3B1FE1072F00E6A0B0 /* LoginViewController+Rx.swift in Sources */,
+				34BE71431FE0190D00502FE6 /* EventUtil.swift in Sources */,
 				34BE712A1FDF84A900502FE6 /* UiAssembly.swift in Sources */,
 				342FE86E1FD6495C005687F4 /* AppDelegate.swift in Sources */,
 				34BE71271FDF821100502FE6 /* RootViewController+Rx.swift in Sources */,
 				34BE71251FDF7EB500502FE6 /* RootView.swift in Sources */,
+				34BE71351FDFCFC900502FE6 /* RouteAssembly.swift in Sources */,
+				34BE71381FDFD07900502FE6 /* RouteSideEffectExecutor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

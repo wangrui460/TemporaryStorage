@@ -103,6 +103,10 @@
 		34BE711A1FDEE2A000502FE6 /* UiEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE71191FDEE2A000502FE6 /* UiEvent.swift */; };
 		34BE711D1FDEE57800502FE6 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE711C1FDEE57800502FE6 /* Page.swift */; };
 		34BE711F1FDEE7ED00502FE6 /* PageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE711E1FDEE7ED00502FE6 /* PageAction.swift */; };
+		34BE712D1FDFC6C000502FE6 /* RouteAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE712B1FDFC62600502FE6 /* RouteAssembly.swift */; };
+		34BE712F1FDFC76000502FE6 /* SideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE712E1FDFC76000502FE6 /* SideEffect.swift */; };
+		34BE71311FDFC7BD00502FE6 /* SideEffectExecution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE71301FDFC7BD00502FE6 /* SideEffectExecution.swift */; };
+		34BE71331FDFC8AE00502FE6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE71321FDFC8AE00502FE6 /* Router.swift */; };
 		350ECAB2B1399C023406FFA08A8D8A11 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BE6232AA075053092B47C482C0831A /* Observable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		364BF9B2EE18CA887F2E558A28E31E4D /* UITextField+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB40D34818E689AF75CDC0D309537927 /* UITextField+Rx.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		36AD688469D76E2E3E901F5CD0E18A82 /* SteviaLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C000485620680B525C5B756929640E63 /* SteviaLayout-dummy.m */; };
@@ -693,6 +697,10 @@
 		34BE71191FDEE2A000502FE6 /* UiEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiEvent.swift; sourceTree = "<group>"; };
 		34BE711C1FDEE57800502FE6 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		34BE711E1FDEE7ED00502FE6 /* PageAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageAction.swift; sourceTree = "<group>"; };
+		34BE712B1FDFC62600502FE6 /* RouteAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteAssembly.swift; sourceTree = "<group>"; };
+		34BE712E1FDFC76000502FE6 /* SideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideEffect.swift; sourceTree = "<group>"; };
+		34BE71301FDFC7BD00502FE6 /* SideEffectExecution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideEffectExecution.swift; sourceTree = "<group>"; };
+		34BE71321FDFC8AE00502FE6 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		35095CF076D816F6FBD97A9FF9309257 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		3533AD3B8FBC5E4F1DE77B1B5C84E570 /* VirtualTimeConverterType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirtualTimeConverterType.swift; path = RxSwift/Schedulers/VirtualTimeConverterType.swift; sourceTree = "<group>"; };
 		361AFB53A44CFCF1020665F701EB7A80 /* UIGestureRecognizer+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIGestureRecognizer+Rx.swift"; path = "RxCocoa/iOS/UIGestureRecognizer+Rx.swift"; sourceTree = "<group>"; };
@@ -1387,6 +1395,7 @@
 			isa = PBXGroup;
 			children = (
 				34BE710F1FDECEA000502FE6 /* UiAssembly.swift */,
+				34BE712B1FDFC62600502FE6 /* RouteAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -1422,6 +1431,8 @@
 			isa = PBXGroup;
 			children = (
 				34BE71171FDEE09000502FE6 /* Event.swift */,
+				34BE712E1FDFC76000502FE6 /* SideEffect.swift */,
+				34BE71301FDFC7BD00502FE6 /* SideEffectExecution.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -1430,6 +1441,7 @@
 			isa = PBXGroup;
 			children = (
 				34BE711C1FDEE57800502FE6 /* Page.swift */,
+				34BE71321FDFC8AE00502FE6 /* Router.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -2903,12 +2915,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34BE71331FDFC8AE00502FE6 /* Router.swift in Sources */,
 				34BE71181FDEE09000502FE6 /* Event.swift in Sources */,
 				34BE711A1FDEE2A000502FE6 /* UiEvent.swift in Sources */,
 				34BE711D1FDEE57800502FE6 /* Page.swift in Sources */,
+				34BE712F1FDFC76000502FE6 /* SideEffect.swift in Sources */,
 				B69CC9A47D43856212DD008127DE22B2 /* XiangxCore-dummy.m in Sources */,
 				34BE711F1FDEE7ED00502FE6 /* PageAction.swift in Sources */,
+				34BE712D1FDFC6C000502FE6 /* RouteAssembly.swift in Sources */,
 				34BE71101FDECEA000502FE6 /* UiAssembly.swift in Sources */,
+				34BE71311FDFC7BD00502FE6 /* SideEffectExecution.swift in Sources */,
 				34BE71131FDED03D00502FE6 /* Root.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
