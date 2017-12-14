@@ -22,9 +22,9 @@ class LoginViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-//    override func loadView() {
-//
-//    }
+    override func loadView() {
+        view = container.resolve(LoginView.self)
+    }
     
     
     override func viewDidLoad() {

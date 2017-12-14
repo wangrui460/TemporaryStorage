@@ -20,14 +20,17 @@ class UiAssembly: Assembly
         container.register(UINavigationController.self) { r in
             UINavigationController(rootViewController: r.resolve(RootViewController.self)!)
         }
+        .inObjectScope(.container)
         
         container.register(RootViewController.self) { r in
             RootViewController(container: rootViewControllerContainer(parent: container))
         }
         .initCompleted { r, rootViewController in
             let observer = r.resolve(PublishSubject<UiEvent>.self)!
+            // subscribe<O>(_ observer: O)
             _ = rootViewController.events.subscribe(observer)
         }
+        
         
         container.register(LoginViewController.self) { (r, toLogin:ToLogin) in
             LoginViewController(container:loginViewControllerContainer(parent: container))

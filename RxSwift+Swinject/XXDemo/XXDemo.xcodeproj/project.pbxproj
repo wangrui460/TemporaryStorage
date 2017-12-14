@@ -12,6 +12,7 @@
 		342FE8781FD6495C005687F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 342FE8761FD6495C005687F4 /* LaunchScreen.storyboard */; };
 		342FE8831FD6495C005687F4 /* XXDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342FE8821FD6495C005687F4 /* XXDemoTests.swift */; };
 		342FE88E1FD6495C005687F4 /* XXDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342FE88D1FD6495C005687F4 /* XXDemoUITests.swift */; };
+		348464771FE26F4B00F4CAA8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348464761FE26F4B00F4CAA8 /* LoginView.swift */; };
 		34BE71211FDF7D6100502FE6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE71201FDF7D6100502FE6 /* RootViewController.swift */; };
 		34BE71251FDF7EB500502FE6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE71241FDF7EB500502FE6 /* RootView.swift */; };
 		34BE71271FDF821100502FE6 /* RootViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE71261FDF821100502FE6 /* RootViewController+Rx.swift */; };
@@ -59,6 +60,7 @@
 		342FE8891FD6495C005687F4 /* XXDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XXDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		342FE88D1FD6495C005687F4 /* XXDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXDemoUITests.swift; sourceTree = "<group>"; };
 		342FE88F1FD6495C005687F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		348464761FE26F4B00F4CAA8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		34BE71201FDF7D6100502FE6 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		34BE71241FDF7EB500502FE6 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		34BE71261FDF821100502FE6 /* RootViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootViewController+Rx.swift"; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 			children = (
 				34BE713C1FE00E8900502FE6 /* LoginViewController.swift */,
 				34D71B3A1FE1072F00E6A0B0 /* LoginViewController+Rx.swift */,
+				348464761FE26F4B00F4CAA8 /* LoginView.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 				342FE86E1FD6495C005687F4 /* AppDelegate.swift in Sources */,
 				34BE71271FDF821100502FE6 /* RootViewController+Rx.swift in Sources */,
 				34BE71251FDF7EB500502FE6 /* RootView.swift in Sources */,
+				348464771FE26F4B00F4CAA8 /* LoginView.swift in Sources */,
 				34BE71351FDFCFC900502FE6 /* RouteAssembly.swift in Sources */,
 				34BE71381FDFD07900502FE6 /* RouteSideEffectExecutor.swift in Sources */,
 			);

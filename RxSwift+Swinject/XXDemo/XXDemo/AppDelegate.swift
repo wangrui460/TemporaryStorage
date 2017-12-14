@@ -31,14 +31,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 func initializeSingleton(_ resolver: Resolver) {
-    print("4. AppDelegate文件 resolve RouteSideEffectExecutor.self")
     _ = resolver.resolve(RouteSideEffectExecutor.self)
 }
 
 // 不同的 Assembly 对应的 container 不一样
 // 所以 resolve 同一个服务，不同的 container 返回的值可能不一样
 func appAssembler() -> Assembler {
-    print("1. AppDelegate文件 Assembler([..,RouteAssembly(),..])")
     let assembler = Assembler([
         UiAssembly(),
         RouteAssembly(),

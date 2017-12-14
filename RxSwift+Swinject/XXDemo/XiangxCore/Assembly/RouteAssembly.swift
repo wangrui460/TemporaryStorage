@@ -18,7 +18,6 @@ public class RouteAssembly: Assembly
     
     public func assemble(container: Container) {
         
-        print("3. XiangxCore RouteAssembly register Observable<ToLogin>.self")
         container.register(Observable<ToLogin>.self) { r in
             let rootPage = r.resolve(RootPage.self)!
             return route_toLoginSideEffect(rootPage.pageDidAppearEvent)

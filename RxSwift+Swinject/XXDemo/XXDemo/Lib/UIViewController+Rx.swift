@@ -21,5 +21,6 @@ extension Reactive where Base: UIViewController
             self.methodInvoked(#selector(Base.viewWillDisappear)).map{_ in .pageWillDisappear},
             self.methodInvoked(#selector(Base.viewDidDisappear)).map{_ in .pageDidDisappear},
             ]).asObservable()
+        // asObservable():  Converts `self` to `Observable` sequence.
     }
 }

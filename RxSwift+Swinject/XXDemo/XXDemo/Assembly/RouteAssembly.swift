@@ -19,14 +19,12 @@ class RouteAssembly: Assembly
 {
     func assemble(container: Container)
     {
-        print("2. RouteAssembly文件 register RouteSideEffectExecutor.self")
         container.register(RouteSideEffectExecutor.self) { r in
             return RouteSideEffectExecutor(container: container)
         }
         .inObjectScope(.container)
         .initCompleted { r, executor in
             
-            print("5. RouteAssembly文件 resolve Observable<ToLogin>.self")
             // TODO: 这里的 executor.execute 方法参数是？
             _ = r.resolve(Observable<ToLogin>.self)!
                 .observeOn(MainScheduler.asyncInstance)

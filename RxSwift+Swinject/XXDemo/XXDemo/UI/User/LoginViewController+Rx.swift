@@ -18,6 +18,9 @@ func loginViewControllerContainer(parent: Container) -> Container
     container.register(PageType.self) { _ in
         Page.login
     }
+    container.register(LoginView.self) { _ in
+        LoginView(container: container)
+    }
     
     return container
 }
