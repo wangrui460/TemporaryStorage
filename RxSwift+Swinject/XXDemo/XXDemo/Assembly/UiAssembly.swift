@@ -17,6 +17,7 @@ class UiAssembly: Assembly
 {
     func assemble(container: Container)
     {
+        // TODO: 没有调用 .inObjectScope(.container) 就有问题，那么默认 scope 是？
         container.register(UINavigationController.self) { r in
             UINavigationController(rootViewController: r.resolve(RootViewController.self)!)
         }
